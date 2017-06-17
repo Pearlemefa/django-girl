@@ -25,7 +25,7 @@ SECRET_KEY = '$-zzme@z8q(&u=g5lb-%&6$bwh)a$h&5ch1^d6kq47f+l74%u-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'pearl123.pythonanywhere.com ']
+ALLOWED_HOSTS = ['127.0.0.1', 'pearl123.pythonanywhere.com']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'blogsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
